@@ -1,4 +1,4 @@
-{$, EditorView, View} = require 'atom'
+{$, EditorView, View} = require 'atom-space-pen-views'
 MobilePreviewView = require './mobile-preview-view'
 
 
