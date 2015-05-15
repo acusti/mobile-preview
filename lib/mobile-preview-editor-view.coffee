@@ -1,4 +1,4 @@
-{$, EditorView, View} = require 'atom-space-pen-views'
+{$, TextEditorView, View} = require 'atom-space-pen-views'
 MobilePreviewView = require './mobile-preview-view'
 
 
@@ -8,7 +8,7 @@ class MobilePreviewEditorView extends View
   mobilePreviewView: null
   @content: ->
     @div class: 'overlay mobile-preview from-top mini', =>
-      @subview 'selectEditor', new EditorView(mini: true)
+      @subview 'selectEditor', new TextEditorView(mini: true)
       @div class: 'pull-left', =>
         @button class: 'btn btn-xs', outlet: 'currentButton', 'Current File'
       @div class: 'pull-right', =>
